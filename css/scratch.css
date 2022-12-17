@@ -1,0 +1,163 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+/*--------------------------------------------------------------
+Heading Navigation Bar
+--------------------------------------------------------------*/
+  header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+  }
+  
+  h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0;
+    text-align: center;
+  }
+  
+  .contact-info {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+  }
+/*--------------------------------------------------------------
+Main Picture Area
+--------------------------------------------------------------*/
+  #background {
+    width: 100%;
+    height: 100vh;
+    background: url("../img/hero-bg.jpg") top center;
+    background-size: cover;
+  }
+
+  #background .background-container {
+    position: relative;
+    z-index: 2;
+    min-width: 300px;
+    text-align: center;
+  }
+  
+  #background:before {
+    content: "";
+    background: rgba(5, 13, 24, 0.3);
+    position: absolute;
+    bottom: -83px;
+    top: 82px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+  
+  #background h1 {
+    margin: 0 0 10px 0;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 56px;
+    color: #fff;
+  }
+  
+  #background p {
+    color: #fff;
+    margin-bottom: 50px;
+    font-size: 26px;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  #background p span {
+    color: #fff;
+    padding-bottom: 4px;
+    letter-spacing: 1px;
+    border-bottom: 3px solid #149ddd;
+  }
+  
+  @media (min-width: 1024px) {
+    #background {
+      background-attachment: fixed;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    #background h1 {
+      font-size: 28px;
+      line-height: 36px;
+    }
+  
+    #bacckground h2 {
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 30px;
+    }
+  }
+/*--------------------------------------------------------------
+Heading Navigation Bar pt.2
+--------------------------------------------------------------*/
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 16px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    margin-right: 16px;
+  }
+  
+  nav a:hover {
+    color: #ccc;
+  }
+/*--------------------------------------------------------------
+Grey Side Bars 
+--------------------------------------------------------------*/
+  .grey-box {
+    width: 150px;
+    height: 100%;
+    background-color: #333;
+    position: absolute;
+  }
+  .left-box {
+    left: 0;
+    bottom: -82px;
+    top: 82px;
+  }
+  .right-box {
+    right: 0;
+    bottom: -82px;
+    top: 82px;
+  }
+/*--------------------------------------------------------------
+Main text writing 
+--------------------------------------------------------------*/
+  .about-text{
+    font-size: 22px;
+    background: rgb(122, 122, 122);
+    color: #fff;
+    padding: 5px 15px;
+    display: block;
+    margin-bottom: 1px;
+}
+/*--------------------------------------------------------------
+Youtube Video
+--------------------------------------------------------------*/
+.img-fluid {
+    max-width: auto;
+    height: 275px;
+  }
+
+  .video{
+    display: block;
+    margin: auto;
+    background: rgb(122, 122, 122);
+  }
